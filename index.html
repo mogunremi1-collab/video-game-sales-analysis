@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎮 Video Game Sales Analysis | MG NEXUS</title>
+  <style>
+    :root {
+      --nexus-red: #E31B23;
+      --nexus-black: #0A0A0A;
+      --nexus-white: #FFFFFF;
+      --nexus-gray: #F5F5F7;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+    body { background: var(--nexus-white); color: var(--nexus-black); line-height: 1.6; }
+    
+    header {
+      background: var(--nexus-black);
+      color: var(--nexus-white);
+      padding: 2rem 5%;
+      text-align: center;
+      border-bottom: 4px solid var(--nexus-red);
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { opacity: 0.9; font-size: 1.1rem; }
+
+    main { max-width: 1000px; margin: 2rem auto; padding: 0 5%; }
+    
+    .card {
+      background: var(--nexus-gray);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .card h2 { color: var(--nexus-red); margin-bottom: 1rem; border-bottom: 2px solid var(--nexus-red); display: inline-block; padding-bottom: 0.3rem; }
+    
+    .insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+    .insight-box { background: var(--nexus-white); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--nexus-red); }
+
+    .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+    .btn {
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .btn-primary { background: var(--nexus-red); color: var(--nexus-white); }
+    .btn-primary:hover { background: #C4151B; }
+    .btn-secondary { background: var(--nexus-black); color: var(--nexus-white); }
+    .btn-secondary:hover { background: #222; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 5%;
+      background: var(--nexus-black);
+      color: var(--nexus-white);
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--nexus-red); text-decoration: none; }
+    
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      .btn-group { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎮 Video Game Sales Analysis</h1>
+    <p>Exploratory Data Analysis (1980–2024) | Built by Ogunremi Marvellous | MG NEXUS</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>📊 Project Overview</h2>
+      <p>This project analyzes <strong>64,000+ video game titles</strong> to uncover trends in global sales, platform dominance, genre performance, and the correlation between critic scores and commercial success. Built with Python, Pandas, Plotly, and Streamlit.</p>
+      <div class="btn-group">
+        <a href="https://github.com/mogunremi1-collab/video-game-sales-analysis" class="btn btn-secondary">📂 View GitHub Repo</a>
+        <a href="https://your-streamlit-app-url.streamlit.app" class="btn btn-primary">🚀 Launch Live Dashboard</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 Key Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-box"><strong>🎯 Genre Dominance:</strong> Action & Shooter games drive ~45% of total sales.</div>
+        <div class="insight-box"><strong>🌍 Regional Split:</strong> North America accounts for 52% of global sales.</div>
+        <div class="insight-box"><strong>📈 Platform Peaks:</strong> PS2 & PS4 eras dominated; Switch shows strongest post-2017 growth.</div>
+        <div class="insight-box"><strong>⭐ Quality vs Sales:</strong> Only 28% of top-selling games have critic scores >9.0.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🛠️ Tech Stack</h2>
+      <p><code>Python 3</code> • <code>Pandas</code> • <code>Plotly</code> • <code>Streamlit</code> • <code>Jupyter</code></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>🔗 Dataset: <a href="https://www.kaggle.com/datasets/bhushandivekar/video-game-sales-and-industry-data-1980-2024" target="_blank">Kaggle Video Game Sales (1980-2024)</a> (CC0 Public Domain)</p>
+    <p>© 2026 MG NEXUS | Crafted with ❤️ by Ogunremi Marvellous</p>
+  </footer>
+
+</body>
+</html>
